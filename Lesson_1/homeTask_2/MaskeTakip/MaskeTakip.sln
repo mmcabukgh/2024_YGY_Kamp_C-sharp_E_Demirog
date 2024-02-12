@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workaround", "Workaround\Workaround.csproj", "{0D6973E2-DC60-4B88-9FD6-BDDE7EBD6103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{919F5BDB-1B74-4AA9-916E-3DAFF23135DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{A1E2DAD0-F54C-44CD-B8A3-0A43BE0CD7C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D6973E2-DC60-4B88-9FD6-BDDE7EBD6103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6973E2-DC60-4B88-9FD6-BDDE7EBD6103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6973E2-DC60-4B88-9FD6-BDDE7EBD6103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6973E2-DC60-4B88-9FD6-BDDE7EBD6103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919F5BDB-1B74-4AA9-916E-3DAFF23135DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919F5BDB-1B74-4AA9-916E-3DAFF23135DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919F5BDB-1B74-4AA9-916E-3DAFF23135DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919F5BDB-1B74-4AA9-916E-3DAFF23135DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E2DAD0-F54C-44CD-B8A3-0A43BE0CD7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E2DAD0-F54C-44CD-B8A3-0A43BE0CD7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E2DAD0-F54C-44CD-B8A3-0A43BE0CD7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E2DAD0-F54C-44CD-B8A3-0A43BE0CD7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4C95756-2328-4583-8F20-D958F0875BCF}
+	EndGlobalSection
+EndGlobal
