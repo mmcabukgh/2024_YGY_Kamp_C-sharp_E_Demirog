@@ -1,5 +1,5 @@
 # 2024 Yazilim Gelistirici Yetistirme Kampý (C#) 
-### Egitmen : Engin Demirog
+### Egitmen : Engin Demirog 
 
 ![Course Logo](/lng_src/Cs_CourseLogo.png) 
 # JavaReactCamp
