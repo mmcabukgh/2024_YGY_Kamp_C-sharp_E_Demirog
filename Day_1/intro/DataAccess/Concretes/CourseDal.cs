@@ -1,16 +1,17 @@
-﻿using intro.Entities;
+﻿using intro.DataAccess.Abstracts;
+using intro.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace intro.Business;
+namespace intro.DataAccess.Concretes;
 
-public class CourseManager
+public class CourseDal:ICourseDal
 {
-    Course[] courses = new Course[3];
-    public CourseManager()
+    List<Course> courses;
+    public CourseDal()
     {
         Course course1 = new Course();
         course1.Id = 0;
@@ -28,15 +29,16 @@ public class CourseManager
         course3.Description = "Python 3.12 Kursu";
         course3.Price = 20;
 
-        courses[0] = course1;
-        courses[1] = course2;
-        courses[2] = course3;
-
-        Console.WriteLine("CourseManager Başladı");
+        courses = new List<Course> { course1, course2, course3 };
     }
-    public Course[] GetAll()
-    {        
-        Console.WriteLine("Tüm Kurslar getirildi!");
+    public List<Course> GetAll()
+    {
+        //burada DB işlemleri yapılır // SQL öğren
         return courses;
+    }
+
+    public void Add(Course course)
+    {
+        courses.Add(course);
     }
 }

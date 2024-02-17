@@ -1,17 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using intro.Business;
+using intro.DataAccess.Concretes;
 using intro.Entities;
 
 Console.WriteLine("Hello, World!");
 
-CourseManager courseManager = new CourseManager();
+CourseManager courseManager = new CourseManager(new CourseDal());
+// Sadece  "new CourseDal()" ı >>>>  "new EfCourseDal()" yaparak tamamen farklı veritabanına ulaşabiliyoruz.
+//CourseManager courseManager = new CourseManager(new EfCourseDal()); 
 
-Course[] courses1= courseManager.GetAll();
+// Course[] courses1= courseManager.GetAll(); // güncellendi
+List<Course> courses1 = courseManager.GetAll();
 
-for (int i = 0; i < courses1.Length; i++)
+for (int i = 0; i < courses1.Count; i++)
 {
-    Console.WriteLine("Kurs: " + courses1[i].Name + " / Ücret: " + courses1[i].Price);
-    
+    Console.WriteLine("Kurs: " + courses1[i].Name + " / Ücret: " + courses1[i].Price);    
 }
 
 IndividualCustomer customer1 =  new IndividualCustomer();
